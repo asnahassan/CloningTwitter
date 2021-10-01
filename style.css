@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* box-sizing: border-box;  
+  padding: 0;
+  margin: 0;
+  background-color:white; */
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: block;
+}
+
+.container {
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 90vh;
+  width: 715px;
+  background: url("https://abs.twimg.com/sticky/illustrations/lohp_en_850x623.png")
+    center center/cover;
+  display: flex;
+  /* flex: 0 1 53vh; */
+  position: relative;
+}
+
+.content {
+  flex: 0 0 47vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.bigbird {
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
+.smallbird {
+  align-items: center;
+  justify-content: center;
+  width: 2.85rem;
+  fill: #1da1f2;
+  display: flex;
+  margin-bottom: 65px;
+}
+
+h1,
+h3 {
+  color: black;
+}
+
+h1 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  display: inline;
+  font-size: 71px;
+  font-stretch: 100%;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  letter-spacing: 1px;
+  line-height: 82px;
+  margin-bottom: 50px;
+  margin-left: -15px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-width: 0px;
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+  white-space: pre-wrap;
+  pointer-events: auto;
+}
+
+h3 {
+  font-size: 3vw;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  font-size: 35px;
+  letter-spacing: 0.7px;
+  line-height: 36px;
+  position: relative;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.btn {
+  display: flex;
+  box-sizing: border-box;
+  transition: background-color 0.218s, border-color 0.218s;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: none;
+  /* border: 1px solid #dadce0; */
+  color: #3c4043;
+  cursor: pointer;
+  font-family: "Google Sans", arial, sans-serif;
+  height: 40px;
+  letter-spacing: 0.25px;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* width: auto; */
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 10vw;
+  font-size: 0.89rem;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgb(207, 217, 222);
+  margin-bottom: 20px;
+  flex-grow: 1;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  min-width: 36px;
+  max-width: 385px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(248, 245, 245);
+  border: 1px solid rgb(207, 217, 222);
+  background-color: box;
+}
+.btn-signUpGoogle {
+  background: white;
+
+  transition: all 0.2s ease;
+}
+
+.btn-signUpApple {
+  background: white;
+  line-height: 5px;
+  align-items: center;
+  transition: all 0.2s ease;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  font-weight: 700;
+  color: black;
+  /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINNwSn9R_l-NZ1uxAddZXpaYkAh1tp7j2pERTi8a5rk4-bCffnF7ljC9ToLxZr4X-rPQ&usqp=CAU')
+    center center/cover; */
+}
+
+.btn-signUp {
+  background: white;
+  line-height: 5px;
+  align-items: center;
+  transition: all 0.2s ease;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  font-weight: 700;
+  color: black;
+}
+
+.signIn {
+  /* display:  */
+  align-items: center;
+  justify-content: center;
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 1rem;
+  /* width:24rem;
+    height: 3.3rem;
+       */
+}
+
+.button p {
+  color: #5d6266;
+  font-size: 0.85rem;
+}
+
+.button div p {
+  font-size: 0.95rem;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 1rem 2%;
+}
+
+.footer nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer nav a,
+.footer nav div {
+  text-decoration: none;
+  font-size: 13px;
+  color: #536471;
+  margin: 0.3rem 0.5rem;
+  text-transform: capitalize;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.footer nav a:hover {
+  border-bottom: 1px solid #536471;
+}
+
+.TermsofService {
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+}
+
+.PrivacyPolicy {
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+}
+
+.CookieUse {
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.google {
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  display: flex;
+  margin-right: 8px;
+  margin-bottom: 1px;
+}
+
+.apple {
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 6.5px;
+  margin-bottom: 1.5px;
+}
+
+@media (max-width: 1050px) {
+  .content {
+    order: -1;
+    max-width: 600px;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .image {
+    height: 50vh;
+    flex: 0 1 100vh;
+  }
+
+  .button {
+    display: flex;
+  }
+
+  .btn {
+    width: 15rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 25rem;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+}
